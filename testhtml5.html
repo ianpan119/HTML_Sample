@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML 5</title>
+<style type="text/css">
+.meter1 {
+	width:250px;
+	height:30px;
+}
+.canvas1 {
+	border:2px double #FF9900;
+}
+</style>
+<script type="application/javascript">
+
+function drawOnCanvas() {
+	
+	var canvas = document.getElementById("mycanvas");
+	if (canvas.getContext) {
+		
+		var ctx = canvas.getContext("2d");
+		
+		ctx.beginPath();
+		ctx.moveTo(100,100);
+		ctx.lineTo(100,500);
+		ctx.lineTo(500,500);
+		ctx.strokeStyle = "#2222FF";
+		ctx.lineWidth = 3;
+		ctx.stroke();
+		
+		ctx.beginPath();
+		ctx.moveTo(150,300);
+		ctx.lineTo(250,150);
+		ctx.lineTo(350,400);
+		ctx.lineTo(450,250);
+		ctx.strokeStyle = "#FF33FF";
+		ctx.lineWidth = 4;
+		ctx.stroke();
+		
+		ctx.font = "20pt 微軟正黑體";
+		ctx.fillStyle = "#339933";
+		ctx.fillText("業績", 35,100);
+		ctx.fillText("日期",505,505);
+	}
+}
+</script>
+</head>
+
+<body onLoad="drawOnCanvas()">
+
+<header>
+	<hgroup>
+	<h1>HTML 5 Demo</h1>
+    <h2>HTML 5 標題</h2>
+	</hgroup>
+	<nav>
+		<ul>
+        	<li><a href="#">首頁</a></li>
+            <li><a href="#">基本資料</a></li>
+        	<li><a href="#">作品集</a></li>
+        	<li><a href="#">歷史年表</a></li>
+        	<li><a href="#">電商網站設計</a></li>
+        </ul>
+	<nav>
+</header>
+
+<main>
+	<article>
+    	<header>Html 5 介紹</header>
+        <section>
+        HTML5是HTML最新的修訂版本，2014年10月由全球資訊網協會（W3C）完成標準制定[2][3]。目標是取代1999年所制定的HTML 4.01和XHTML 1.0標準，以期能在網際網路應用迅速發展的時候，使網路標準達到符合當代的網路需求。廣義論及HTML5時，實際指的是包括HTML、CSS和JavaScript在內的一套技術組合。它希望能夠減少網頁瀏覽器對於需要外掛程式的豐富性網路應用服務（Plug-in-Based Rich Internet Application，RIA），例如：AdobeFlash、Microsoft Silverlight與Oracle JavaFX的需求，並且提供更多能有效加強網路應用的標準集。
+        </section>
+        <figure>
+        <img src="HTML5_logo.png" width="180"/>
+        </figure>
+        <figcaption>
+        	圖1. Html 5 logo 來自維基百科
+        </figcaption>
+    </article>
+    
+    <article>
+    	<details>
+    	<summary>Html 5 介紹</summary>
+        HTML5是HTML最新的修訂版本，2014年10月由全球資訊網協會（W3C）完成標準制定[2][3]。目標是取代1999年所制定的HTML 4.01和XHTML 1.0標準，以期能在網際網路應用迅速發展的時候，使網路標準達到符合當代的網路需求。廣義論及HTML5時，實際指的是包括HTML、CSS和JavaScript在內的一套技術組合。它希望能夠減少網頁瀏覽器對於需要外掛程式的豐富性網路應用服務（Plug-in-Based Rich Internet Application，RIA），例如：AdobeFlash、Microsoft Silverlight與Oracle JavaFX的需求，並且提供更多能有效加強網路應用的標準集。
+        </details>
+    </article>
+    
+    <article>
+    	<section>
+        HTML 5 多媒體測試 - 聲音檔
+        </section>
+        <aside>
+        	<audio src="bird.ogg" autoplay controls />
+        </aside>
+    </article>
+    
+    <article>
+    	<section>
+        HTML 5 多媒體測試 - 影片檔
+        </section>
+        <aside>
+        <video src="bird.ogv" autoplay controls width="320" height="240"/>
+        </aside>
+    </article>
+    
+    <article>
+    	<section>
+        HTML 5 長條圖的繪製
+        </section>
+        <figure>
+        <p>國文<meter min="0" max="100" value="80" class="meter1">80%</meter></p>
+        <p>數學<meter min="0" max="100" value="70" class="meter1">70%</meter></p>
+        <p>英文<meter min="0" max="100" value="50" class="meter1">50%</meter></p>
+        </figure>
+    </article>
+    
+    <article>
+    <section>HTML 5 繪圖功能</section>
+    <aside>
+    	<canvas width="600" height="600" id="mycanvas" class="canvas1">
+        </canvas>
+    </aside>
+    </article>
+    
+</main>
+
+<footer>
+<center>2017 版權宣告  公司資訊  聯絡方式  會員條款</center>
+</footer>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+

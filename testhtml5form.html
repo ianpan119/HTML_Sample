@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML 5 Form</title>
+<style type="text/css">
+.fieldset1 {
+	font-family:"微軟正黑體", "新細明體";
+	font-size: 20px;
+	border: 2px solid #99CC99;
+	background: #CCFFCC;
+	border-radius: 10px;
+	width: 80%;
+}
+.textbox1 {
+	border-radius: 10px;
+}
+.button1 {
+	font-family:"微軟正黑體", "新細明體";
+	font-size: 22px;
+	color: #FFFFFF;
+	background:#228822;
+	border-radius: 8px;
+	width: 150px;
+	height: 40px;
+}
+.button1:hover {
+	background:#55BB55;
+}
+</style>
+</head>
+
+<body>
+<form action="receive.jsp" method="post" target="_self">
+<fieldset class="fieldset1">
+	<legend>帳號資料</legend>
+    <ul>
+    	<li><label>帳號:</label>
+        <input type="text" name="username1" placeholder="請輸入文字" required autofocus autocomplete="on" class="textbox1"/>
+        </li>
+        <li><label>密碼:</label>
+        <input type="password" name="password1" placeholder="請輸入密碼" required class="textbox1"/>
+        </li>
+    </ul>
+</fieldset>
+
+<fieldset class="fieldset1">
+	<legend>基本資料</legend>
+    <ul>
+    <li><label>Email</label>
+    <input type="email" name="email1"/>
+    </li>
+    <li><label>電話</label>
+    <input type="tel" name="phone1"/>
+    </li>
+    <li><label>年齡:</label>
+    <input type="number" name="age1" min="1" max="150" step="5"/>
+    </li>
+    <li><label>體重:</label>
+    <label>1kg</label>
+    <input type="range" name="weight1" min="1" max="150" step="1" value="60"/><label>150kg</label>
+    </li>
+    <li><label>生日:</label>
+    <input type="date" name="birthday1" />
+    </li>
+    <li><label>月份:</label>
+    <input type="month" name="month1" />
+    </li>
+    <li><label>週數:</label>
+    <input type="week" name="week1" />
+    </li>
+    <li><label>時間:</label>
+    <input type="time" name="time1" />
+    </li>
+    <li><label>網址:</label>
+    <input type="url" name="url1"/>
+    </li>
+    <li><label>顏色:</label>
+    <input type="color" name="color1"/>
+    </li>
+    <li><label>多檔上傳:</label>
+    <input type="file" name="multifile1" multiple/>
+    </li>
+    </ul>
+</fieldset>
+
+<fieldset class="fieldset1">
+	<input type="submit" value="送出資料" class="button1"/>
+    <input type="reset" value="重置表單" class="button1" />
+    <input type="image" src="good1.png" width="30" height="30" alt="submit"/>
+</fieldset>
+</form>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

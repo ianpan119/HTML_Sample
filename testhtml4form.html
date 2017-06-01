@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML Form 4</title>
+<style type="text/css">
+.word1 {
+	font-family:"微軟正黑體", "新細明體";
+	font-size:18px;
+	letter-spacing:1px;
+	color:#222222;
+}
+</style>
+<script type="application/javascript">
+function checkFormData() {
+	
+	var myUserName = document.getElementById("txtusername").value;
+	var myPassword = document.getElementById("txtpassword").value;
+	
+	if (myUserName == "") {
+		alert("請輸入姓名");
+		return false;
+	}
+	
+	if (myPassword == "") {
+		alert("請輸入密碼");
+		return false;
+	}	
+}
+</script>
+</head>
+
+<body>
+<form action="recieve.jsp" method="post" target="_self" onSubmit="return  checkFormData()">
+<table width="600" align="center" border="0" cellspacing="5" cellpadding="3">
+  <tr>
+    <td align="right" bgcolor="#CCFFCC"><label class="word1">姓名:</label></td>
+    <td bgcolor="#FFFFCC"><input type="text" name="username1" id="txtusername" size="20" maxlength="50" class="word1"/></td>
+  </tr>
+  <tr>
+    <td align="right" bgcolor="#CCFFCC"><label class="word1">密碼:</label></td>
+    <td bgcolor="#CCFFFF"><input type="password" name="password1" id="txtpassword" size="20" maxlength="50" class="word1"/></td>
+  </tr>
+  <tr>
+    <td align="right" bgcolor="#CCFFCC"><label class="word1">性別:</label></td>
+    <td bgcolor="#FFFFCC">
+    <input type="radio" name="gender1" value="1" class="word1"/><label class="word1">男</label>
+    <input type="radio" name="gender1" value="2" class="word1"/><label class="word1">女</label>
+    </td>
+  </tr>
+  <tr>
+    <td align="right" bgcolor="#CCFFCC"><label class="word1">婚姻狀態:</label></td>
+    <td bgcolor="#CCFFFF"> 
+    <input type="radio" name="marriage1" value="1" class="word1"/><label class="word1">未婚</label>
+    <input type="radio" name="marriage1" value="2" class="word1"/><label class="word1">已婚</label>
+    </td>
+  </tr>
+  <tr>
+    <td align="right" bgcolor="#CCFFCC"><label class="word1">興趣:</label></td>
+    <td bgcolor="#FFFFCC">
+    <input type="checkbox" name="hobby1" value="1" class="word1"/><label class="word1">電影</label>
+    <input type="checkbox" name="hobby2" value="1" class="word1"/><label class="word1">唱歌</label>
+    <input type="checkbox" name="hobby3" value="1" class="word1"/><label class="word1">美食</label>
+    <input type="checkbox" name="hobby4" value="1" class="word1"/><label class="word1">旅遊</label>
+    <input type="checkbox" name="hobby5" value="1" class="word1"/><label class="word1">攝影</label>
+    </td>
+  </tr>
+  <tr>
+    <td align="right" bgcolor="#CCFFCC"><label class="word1">自我介紹:</label></td>
+    <td bgcolor="#CCFFFF"><textarea name="selfinfo1" cols="40" rows="5" class="word1">請輸入文字</textarea></td>
+  </tr>
+  <tr>
+    <td align="right" bgcolor="#CCFFCC"><label class="word1">地址:</label></td>
+    <td bgcolor="#FFFFCC">
+    <select name="city1" size="1" class="word1">
+    <optgroup label="直轄市-8h送達" class="word1">
+    <option value="1" class="word1">高雄市</option>
+    <option value="2" class="word1">台南市</option>
+    <option value="3" class="word1">台中市</option>
+    <option value="4" class="word1">新北市</option>
+    <option value="5" class="word1">台北市</option>
+    </optgroup>
+    <optgroup label="其他縣市-24h送達" class="word1">
+    <option value="6" class="word1">桃園市</option>
+    <option value="7" class="word1">新竹市</option>
+    <option value="8" class="word1">嘉義市</option>
+    </optgroup>
+    </select>
+    <input type="text" name="address1" size="20" value="請輸入地址..." class="word1"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="right" bgcolor="#CCFFCC"><label class="word1">上傳照片:</label></td>
+    <td bgcolor="#CCFFFF"><input type="file" name="uploadfile1" class="word1"/></td>
+  </tr>
+  <tr>
+    <td align="right" bgcolor="#CCFFCC">&nbsp;</td>
+    <td bgcolor="#FFFFCC">
+    <input type="submit" value="送出資料" class="word1"/>
+    <input type="reset" value="重設表單" class="word1"/>
+    </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<input type="hidden" value="123456789" name="formno1"/>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
